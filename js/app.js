@@ -1,21 +1,21 @@
 'use strict';
 
-console.log ('Hellllooooo mikey');
+//console.log ('Hellllooooo mikey');
 
-let user = prompt('What ur name');
+let user = prompt('Hello, what is your name?').toUpperCase();
 
-alert(`welcome ${user}`);
+alert(`WELCOME ${user}!! Please enjoy this special guessing game to get to know a bit about me!`);
 
-let answerOne = prompt('Do you have a daughter?').toLowerCase;
+//Ask user five 'yes' or 'no' questions about me and let them know if they are correct
 
+let answerCookies = prompt('Do I love cookies?').toLowerCase();
 
-//spelled out version
-//let normalizedAnswerOne = answerOne.toLowerCase();
-
-if (answerOne === 'yes' || answerOne === 'y') {
-  console.log('yes');
-} else if (answerOne === 'no'|| answerOne === 'n') {
-  console.log('no');
+if (answerCookies === 'yes' || answerCookies === 'y' || answerCookies === 'ye' || answerCookies === 'ya'|| answerCookies === 'yerp') {
+  console.log('Heck yes I do. +10xp');
+}
+else if (answerCookies === 'no'|| answerCookies === 'n' || answerCookies === 'na' || answerCookies === 'nope' || answerCookies === 'noo'|| answerCookies === 'heck no!') {
+  console.log('that answer is....');
+  console.log('VERY INCORRECT! I love cookies &#128540;');
 } else {
-  console.log('follow instructions');
+  console.log('Please stick to the rules, PAL');
 }
