@@ -85,3 +85,4 @@ else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried =
   alert('Please stick to the rules, PAL -10,000xp');
 }
 
+alert(`Thanks so much ${user} for participating! You now know that I love cookies, I love to kickflip, Shrek is awesome, I want to see Seattle, and meet the Gilb God. Here's a page with some more info about my life.`);
