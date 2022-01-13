@@ -9,7 +9,7 @@ I built this webpage to teach the user a bit about me while testing my knowledge
 ___
 
 ## Lab-03: about-me-extend-game
-
+Attempting to make guessing game on Shrek book title and on guessing a number. Lab will need more work from me, but I am submitting my current progress.
 ___
 ___
 
@@ -18,6 +18,7 @@ Links and Resources
 <!-- submission PR -->
 Any Links you used as reference
 <https://www.w3schools.com/charsets/ref_emoji_smileys.asp>
+<https://github.com/codefellows/seattle-code-201d82/blob/main/class-03/demo/guessing-game-box-model/js/app.js>
 
 ### ___Reflections and Comments___ -->
 <!-- Consider including the answers to your daily journal and submission questions here -->
@@ -28,3 +29,5 @@ Any Links you used as reference
   * Learned how to properly use logic statements within code ! :D
 
 * Lab 03
+  * I learned that I need a lot more practice on mapping and creating loops, arrays, and logical operators this weekend
+  * Did manage to make CSS page layout look 'OK' after breaking it for a bit. reset.css got me
