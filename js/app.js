@@ -1,6 +1,7 @@
 'use strict';
 
-//console.log ('Hellllooooo mikey');
+let yourCurrentXP = 0;
+console.log (yourCurrentXP);
 
 let user = prompt('Hello, what is your name?').toUpperCase();
 
@@ -12,77 +13,111 @@ alert(`WELCOME ${user}!! Please enjoy this special guessing game to get to know 
 let answerCookies = prompt('Do I love cookies?').toLowerCase();
 
 if (answerCookies === 'yes' || answerCookies === 'y' || answerCookies === 'ye' || answerCookies === 'ya'|| answerCookies === 'yerp') {
-// console.log('Heck yes I do. +10xp');
-  alert('Heck yes I do. +10xp');
+
+  alert('Heck yes I do. +1xp');
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
 }
 else if (answerCookies === 'no'|| answerCookies === 'n' || answerCookies === 'na' || answerCookies === 'nope' || answerCookies === 'noo'|| answerCookies === 'heck no!') {
-  // console.log('that answer is....');
-  // console.log('VERY INCORRECT! I love cookies -10xp');
   alert('that answer is....');
-  alert('VERY INCORRECT! I love cookies -10xp');
+  alert('VERY INCORRECT! I love cookies');
 } else {
-  // console.log('Please stick to the rules, PAL -10,000xp');
-  alert('Please stick to the rules, PAL -10,000xp');
+
+  alert('Please stick to the rules, PAL ');
 }
 
 //Question 2:KICKFLIP
 let answerKickflip = prompt('Can I do a kickflip?').toLowerCase();
 
 if (answerKickflip === 'yes' || answerKickflip === 'y' || answerKickflip === 'ye' || answerKickflip === 'ya'|| answerKickflip === 'yerp') {
-  // console.log('YES HE FLIPPIN` CAN +10xp');
-  alert('YES I FLIPPIN` CAN +10xp');
+  alert('YES I FLIPPIN` CAN +1xp');
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
 }
 else if (answerKickflip === 'no'|| answerKickflip === 'n' || answerKickflip === 'na' || answerKickflip === 'nope' || answerKickflip === 'noo'|| answerKickflip === 'heck no!') {
-  // console.log('very INCORRECT, this is my fav trick -10xp');
-  alert('very INCORRECT, in this is my fav trick -10xp');
+  alert('very INCORRECT, in this is my fav trick ');
 } else {
-  // console.log('Please stick to the rules, PAL -10,000xp');
-  alert('Please stick to the rules, PAL -10,000xp');
+  alert('Please stick to the rules, PAL ');
 }
 
 //Question 3: SHREK
 let answerGetShrecked = prompt('Do I think Shrek is rad?').toLowerCase();
 
 if (answerGetShrecked === 'yes' || answerGetShrecked === 'y' || answerGetShrecked === 'ye' || answerGetShrecked === 'ya'|| answerGetShrecked === 'yerp') {
-  // console.log('ofc I do. +10xp');
-  alert('ofc I do. +10xp');
+
+  alert('ofc I do. +1xp ');
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
 }
 else if (answerGetShrecked === 'no'|| answerGetShrecked === 'n' || answerGetShrecked === 'na' || answerGetShrecked === 'nope' || answerGetShrecked === 'noo'|| answerGetShrecked === 'heck no!') {
-  // console.log('you STILL haven`t noticed all the answers are yes?? I love Shrek. -10xp');
-  alert('you STILL haven`t noticed all the answers are yes?? I love Shrek. -10xp');
+  alert('you STILL haven`t noticed all the answers are yes?? I love Shrek. ');
 } else {
-  // console.log('Please stick to the rules, PAL -10,000xp');
-  alert('Please stick to the rules, PAL -10,000xp');
+  alert('Please stick to the rules, PAL ');
 }
 
 //Question 4: SEATTLE
 let answerSeattle = prompt('Have I been to Seattle?').toLowerCase();
 
 if (answerSeattle === 'yes' || answerSeattle === 'y' || answerSeattle === 'ye' || answerSeattle === 'ya'|| answerSeattle === 'yerp') {
-  // console.log('Not yet! -10xp');
-  alert('Not yet! -10xp');
+  alert('Not yet! ');
 }
 else if (answerSeattle === 'no'|| answerSeattle === 'n' || answerSeattle === 'na' || answerSeattle === 'nope' || answerSeattle === 'noo'|| answerSeattle === 'heck no!') {
-  // console.log('CORRECT! Hopefully someday soon though! +10xp');
-  alert('CORRECT! Hopefully someday soon though! +10xp');
+  alert('CORRECT! Hopefully someday soon though! +1');
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
 } else {
-  // console.log('Please stick to the rules, PAL -10,000xp');
-  alert('Please stick to the rules, PAL -10,000xp');
+  alert('Please stick to the rules, PAL ');
 }
 
 //Question 5: GOTTFRIED
 let answerGottfried = prompt('Have I had drinks with Gilbert Gottfried? (the voice behind Iago from OG Alladin,, and SO much more)').toLowerCase();
 
 if (answerGottfried === 'yes' || answerGottfried === 'y' || answerGottfried === 'ye' || answerGottfried === 'ya'|| answerGottfried === 'yerp') {
-  // console.log('NO, I have not yet :/ soon hopefully tho +10xp anyways for believing in me');
-  alert('NO, I have not yet :/ soon hopefully tho +10xp anyways for believing in me');
+  alert('NO, I have not yet :/ thanks for believing in me');
 }
 else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried === 'na' || answerGottfried === 'nope' || answerGottfried === 'noo'|| answerGottfried === 'heck no!') {
-  // console.log('Unfortunately you`re correct :/ +10xp');
-  alert('Unfortunately you`re correct :/ +10xp');
+  alert('Unfortunately you`re correct :/ +1');
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
 } else {
-  // console.log('Please stick to the rules, PAL -10,000xp');
-  alert('Please stick to the rules, PAL -10,000xp');
+  alert('Please stick to the rules, PAL ');
 }
+
+let secretNumber = prompt('Try 2 guess a number between 1-77. You`ll have four opportunities.');
+
+while (!secretNumber) {
+  secretNumber = prompt('Keep guessing that number');
+
+}
+if (secretNumber !== 2){
+  alert('no, that`s incorrect');
+}
+
+alert(`YES ${secretNumber} is CORRECT!!!`);
+
+
+
+//ask user a random open question
+let shrekAnswer = prompt('What was the name of the book that the original Shrek film was based off of?').toLowerCase();
+console.log(`user is guessing ${shrekAnswer} as the book that film Shrek was inspired by.`);
+
+//create array of different spellings of the novel 'Shrek' by William Steig as answer to question
+let filmShrekBookTookInspoFrom = ['shrek', 'shrek!', ' shrek', 'shrek! ','!shrek!'];
+
+if (shrekAnswer === filmShrekBookTookInspoFrom){
+  yourCurrentXP++;
+  console.log (yourCurrentXP);
+  alert(`You have ${yourCurrentXP}XP.`);
+
+} else{
+  alert('no that`s incorrect, please try again');
+}
+console.log (yourCurrentXP);
+
 
 alert(`Thanks so much ${user} for participating! You now know that I love cookies, I love to kickflip, Shrek is awesome, I want to see Seattle, and meet the Gilb God. Here's a page with some more info about my life.`);
