@@ -52,20 +52,23 @@ function kickflipAnswer(){
 kickflipAnswer();
 
 //-----Question 3: SHREK-----
-let answerGetShrecked = prompt('Do I think Shrek is rad?').toLowerCase();
+function getShreckedAnswer(){
+  let answerGetShrecked = prompt('Do I think Shrek is rad?').toLowerCase();
 
-if (answerGetShrecked === 'yes' || answerGetShrecked === 'y' || answerGetShrecked === 'ye' || answerGetShrecked === 'ya'|| answerGetShrecked === 'yerp') {
-
-  alert('ofc I do. +1xp ');
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
+  if (answerGetShrecked === 'yes' || answerGetShrecked === 'y' || answerGetShrecked === 'ye' || answerGetShrecked === 'ya'|| answerGetShrecked === 'yerp') {
+  
+    alert('ofc I do. +1xp ');
+    yourCurrentXP++;
+    console.log (yourCurrentXP);
+    alert(`You have ${yourCurrentXP}XP.`);
+  }
+  else if (answerGetShrecked === 'no'|| answerGetShrecked === 'n' || answerGetShrecked === 'na' || answerGetShrecked === 'nope' || answerGetShrecked === 'noo'|| answerGetShrecked === 'heck no!') {
+    alert('you STILL haven`t noticed all the answers are yes?? I love Shrek. ');
+  } else {
+    alert('Please stick to the rules, PAL ');
+  }
 }
-else if (answerGetShrecked === 'no'|| answerGetShrecked === 'n' || answerGetShrecked === 'na' || answerGetShrecked === 'nope' || answerGetShrecked === 'noo'|| answerGetShrecked === 'heck no!') {
-  alert('you STILL haven`t noticed all the answers are yes?? I love Shrek. ');
-} else {
-  alert('Please stick to the rules, PAL ');
-}
+getShreckedAnswer();
 
 //-----Question 4: SEATTLE--------
 let answerSeattle = prompt('Have I been to Seattle?').toLowerCase();
