@@ -16,6 +16,7 @@ h1 {
   color: #432E16;
   border: dashed hsl(32, 51%, 17%) 2px;
   font-size: xx-large;
+  text-align: center;
 
 }
 
@@ -30,9 +31,11 @@ p{
 ul{
   list-style-position: inside;
   list-style-type:disc;
+  border: 1px solid black
 }
 
 ol{
   list-style-position: inside;
   list-style-type: upper-alpha;
+  border: 1px solid black
 }
