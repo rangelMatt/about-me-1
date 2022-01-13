@@ -8,7 +8,7 @@ let user = prompt('Hello, what is your name?').toUpperCase();
 alert(`WELCOME ${user}!! Please enjoy this special guessing game to get to know a bit about me!`);
 
 //Ask user five 'yes' or 'no' questions about me and let them know if they are correct
-//Question 1:COOKIES
+//-----Question 1:COOKIES-----
 
 let answerCookies = prompt('Do I love cookies?').toLowerCase();
 
@@ -27,7 +27,7 @@ else if (answerCookies === 'no'|| answerCookies === 'n' || answerCookies === 'na
   alert('Please stick to the rules, PAL ');
 }
 
-//Question 2:KICKFLIP
+//------Question 2:KICKFLIP-----
 let answerKickflip = prompt('Can I do a kickflip?').toLowerCase();
 
 if (answerKickflip === 'yes' || answerKickflip === 'y' || answerKickflip === 'ye' || answerKickflip === 'ya'|| answerKickflip === 'yerp') {
@@ -42,7 +42,7 @@ else if (answerKickflip === 'no'|| answerKickflip === 'n' || answerKickflip === 
   alert('Please stick to the rules, PAL ');
 }
 
-//Question 3: SHREK
+//-----Question 3: SHREK-----
 let answerGetShrecked = prompt('Do I think Shrek is rad?').toLowerCase();
 
 if (answerGetShrecked === 'yes' || answerGetShrecked === 'y' || answerGetShrecked === 'ye' || answerGetShrecked === 'ya'|| answerGetShrecked === 'yerp') {
@@ -58,7 +58,7 @@ else if (answerGetShrecked === 'no'|| answerGetShrecked === 'n' || answerGetShre
   alert('Please stick to the rules, PAL ');
 }
 
-//Question 4: SEATTLE
+//-----Question 4: SEATTLE--------
 let answerSeattle = prompt('Have I been to Seattle?').toLowerCase();
 
 if (answerSeattle === 'yes' || answerSeattle === 'y' || answerSeattle === 'ye' || answerSeattle === 'ya'|| answerSeattle === 'yerp') {
@@ -73,7 +73,7 @@ else if (answerSeattle === 'no'|| answerSeattle === 'n' || answerSeattle === 'na
   alert('Please stick to the rules, PAL ');
 }
 
-//Question 5: GOTTFRIED
+//-----Question 5: GOTTFRIED-------
 let answerGottfried = prompt('Have I had drinks with Gilbert Gottfried? (the voice behind Iago from OG Alladin,, and SO much more)').toLowerCase();
 
 if (answerGottfried === 'yes' || answerGottfried === 'y' || answerGottfried === 'ye' || answerGottfried === 'ya'|| answerGottfried === 'yerp') {
@@ -89,7 +89,7 @@ else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried =
 }
 
 
-//Lab 03 Secret Number Guessing Game
+//----Lab 03 Secret Number Guessing Game-----
 let correctAnswer = 2;
 let guesses = 4;
 
@@ -112,11 +112,36 @@ while(guesses){
 }
 
 
+//----Question 7 on lab!!----
+let myArr = ['blue', 'black', 'pink','orange'];
+
+
+
+
+let attempts = 6;
+
+while(attempts){
+  let answerSeven = prompt('What is one of my fav colors?');
+  //pink
+
+
+  for(let i=0; i < myArr.length; i++){
+    if(answerSeven === myArr[i]){
+      alert(`Yes ${answerSeven} is one of my favorite colors!`);
+      attempts = 1;
+      break;
+    }
+  }
+
+  attempts--;
+
+
+}
+
 
 alert(`Thanks so much ${user} for participating! You now know that I love cookies, I love to kickflip, Shrek is awesome, I want to see Seattle, and meet the Gilb God. Here's a page with some more info about my life.`);
 
 
-//My work on last part of lab UNFINISHED
 
 // //Question 7 on lab!!
 // let myArr = ['blue', 'black', 'pink','orange'];
