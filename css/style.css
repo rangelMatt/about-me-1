@@ -1,12 +1,38 @@
 body{
   background-color: aqua;
   font-size: small;
+  width: 960px;
+  margin: auto;
+
+
 }
 
-h1{
-  text-align: center; font-size:x-large;
+header, footer{
+  background-color: bisque;
+}
+
+h1 {
+  background-color: rgb(35, 165, 32);
+  color: #432E16;
+  border: dashed hsl(32, 51%, 17%) 2px;
+  font-size: xx-large;
+
 }
 
 h2{
   font-size: medium;
+}
+
+p{
+  border: 5px solid black;
+}
+
+ul{
+  list-style-position: inside;
+  list-style-type:disc;
+}
+
+ol{
+  list-style-position: inside;
+  list-style-type: upper-alpha;
 }
