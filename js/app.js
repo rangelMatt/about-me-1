@@ -10,22 +10,28 @@ alert(`WELCOME ${user}!! Please enjoy this special guessing game to get to know 
 //Ask user five 'yes' or 'no' questions about me and let them know if they are correct
 //-----Question 1:COOKIES-----
 
-let answerCookies = prompt('Do I love cookies?').toLowerCase();
+function cookieAnswer(){
 
-if (answerCookies === 'yes' || answerCookies === 'y' || answerCookies === 'ye' || answerCookies === 'ya'|| answerCookies === 'yerp') {
+  let answerCookies = prompt('Do I love cookies?').toLowerCase();
 
-  alert('Heck yes I do. +1xp');
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
+  if (answerCookies === 'yes' || answerCookies === 'y' || answerCookies === 'ye' || answerCookies === 'ya'|| answerCookies === 'yerp') {
+  
+    alert('Heck yes I do. +1xp');
+    yourCurrentXP++;
+    console.log (yourCurrentXP);
+    alert(`You have ${yourCurrentXP}XP.`);
+  }
+  else if (answerCookies === 'no'|| answerCookies === 'n' || answerCookies === 'na' || answerCookies === 'nope' || answerCookies === 'noo'|| answerCookies === 'heck no!') {
+    alert('that answer is....');
+    alert('VERY INCORRECT! I love cookies');
+  } else {
+  
+    alert('Please stick to the rules, PAL ');
+  }
 }
-else if (answerCookies === 'no'|| answerCookies === 'n' || answerCookies === 'na' || answerCookies === 'nope' || answerCookies === 'noo'|| answerCookies === 'heck no!') {
-  alert('that answer is....');
-  alert('VERY INCORRECT! I love cookies');
-} else {
 
-  alert('Please stick to the rules, PAL ');
-}
+cookieAnswer();
+
 
 //------Question 2:KICKFLIP-----
 let answerKickflip = prompt('Can I do a kickflip?').toLowerCase();
