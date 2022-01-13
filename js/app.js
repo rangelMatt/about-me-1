@@ -88,36 +88,81 @@ else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried =
   alert('Please stick to the rules, PAL ');
 }
 
-let secretNumber = prompt('Try 2 guess a number between 1-77. You`ll have four opportunities.');
 
-while (!secretNumber) {
-  secretNumber = prompt('Keep guessing that number');
+//Lab 03 Secret Number Guessing Game
+let correctAnswer = 2;
+let guesses = 4;
 
+while(guesses){
+  let answerSix = prompt('Guess the correct number stored in my machine brain');
+
+  if (parseInt(answerSix) === correctAnswer){
+    alert('you are correct');
+    break;
+    //guesses = 0;
+  } else if(answerSix > correctAnswer){
+    alert('Too high');
+    guesses--;
+  }  else (answerSix < correctAnswer);{
+    alert('Too low');
+    guesses--;
+  } if(guesses === 0){
+    alert('Sorry no more guesses');
+  }
 }
-if (secretNumber !== 2){
-  alert('no, that`s incorrect');
-}
 
-alert(`YES ${secretNumber} is CORRECT!!!`);
-
-
-
-//ask user a random open question
-let shrekAnswer = prompt('What was the name of the book that the original Shrek film was based off of?').toLowerCase();
-console.log(`user is guessing ${shrekAnswer} as the book that film Shrek was inspired by.`);
-
-//create array of different spellings of the novel 'Shrek' by William Steig as answer to question
-let filmShrekBookTookInspoFrom = ['shrek', 'shrek!', ' shrek', 'shrek! ','!shrek!'];
-
-if (shrekAnswer === filmShrekBookTookInspoFrom){
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
-
-} else{
-  alert('no that`s incorrect, please try again');
-}
-console.log (yourCurrentXP);
 
 
 alert(`Thanks so much ${user} for participating! You now know that I love cookies, I love to kickflip, Shrek is awesome, I want to see Seattle, and meet the Gilb God. Here's a page with some more info about my life.`);
+
+
+//My work on last part of lab UNFINISHED
+
+// //Question 7 on lab!!
+// let myArr = ['blue', 'black', 'pink','orange'];
+
+
+
+
+// let attempts = 6;
+
+// while(attempts){
+//   let answerSeven = prompt('What is one of my fav colors?');
+//   //pink
+
+
+//   for(let i=0; i < myArr.length; i++){
+//     if(answerSeven === myArr[i]){
+//       alert(`Yes ${answerSeven} is one of my favorite colors!`);
+//       attempts = 1;
+//       break;
+//     }
+//   }
+
+//   attempts--;
+
+
+// }
+
+
+//while loop to keep prompt if wrong --slow loop
+
+//for loops are great to check if answer in array!!! -- fast loop
+
+
+// //ask user a random open question
+// let shrekAnswer = prompt('What was the name of the book that the original Shrek film was based off of?').toLowerCase();
+// console.log(`user is guessing ${shrekAnswer} as the book that film Shrek was inspired by.`);
+
+// //create array of different spellings of the novel 'Shrek' by William Steig as answer to question
+// let filmShrekBookTookInspoFrom = ['shrek', 'shrek!', ' shrek', 'shrek! ','!shrek!'];
+
+// if (shrekAnswer === filmShrekBookTookInspoFrom){
+//   yourCurrentXP++;
+//   console.log (yourCurrentXP);
+//   alert(`You have ${yourCurrentXP}XP.`);
+
+// } else{
+//   alert('no that`s incorrect, please try again');
+// }
+// console.log (yourCurrentXP);
