@@ -136,30 +136,33 @@ answerSecretNumber();
 
 
 //----Question 7 on lab!!----
-let myArr = ['blue', 'black', 'pink','orange'];
+function arrayFunction(){
+  let myArr = ['blue', 'black', 'pink','orange'];
 
 
 
 
-let attempts = 6;
-
-while(attempts){
-  let answerSeven = prompt('What is one of my fav colors?');
-  //pink
-
-
-  for(let i=0; i < myArr.length; i++){
-    if(answerSeven === myArr[i]){
-      alert(`Yes ${answerSeven} is one of my favorite colors!`);
-      attempts = 1;
-      break;
+  let attempts = 6;
+  
+  while(attempts){
+    let answerSeven = prompt('What is one of my fav colors?');
+    //pink
+  
+  
+    for(let i=0; i < myArr.length; i++){
+      if(answerSeven === myArr[i]){
+        alert(`Yes ${answerSeven} is one of my favorite colors!`);
+        attempts = 1;
+        break;
+      }
     }
+  
+    attempts--;
+  
+  
   }
-
-  attempts--;
-
-
 }
+arrayFunction();
 
 
 alert(`Thanks so much ${user} for participating! You now know that I love cookies, I love to kickflip, Shrek is awesome, I want to see Seattle, and meet the Gilb God. Here's a page with some more info about my life.`);
