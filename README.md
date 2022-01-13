@@ -10,6 +10,9 @@ ___
 
 ## Lab-03: about-me-extend-game
 Attempting to make guessing game on Shrek book title and on guessing a number. Lab will need more work from me, but I am submitting my current progress.
+
+## Lab-04: about-me-extend-game
+Driver Matt Rangel Navigator Michael Maker. Code was worked on together.
 ___
 ___
 
