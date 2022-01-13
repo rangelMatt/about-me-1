@@ -34,19 +34,22 @@ cookieAnswer();
 
 
 //------Question 2:KICKFLIP-----
-let answerKickflip = prompt('Can I do a kickflip?').toLowerCase();
+function kickflipAnswer(){
+  let answerKickflip = prompt('Can I do a kickflip?').toLowerCase();
 
-if (answerKickflip === 'yes' || answerKickflip === 'y' || answerKickflip === 'ye' || answerKickflip === 'ya'|| answerKickflip === 'yerp') {
-  alert('YES I FLIPPIN` CAN +1xp');
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
+  if (answerKickflip === 'yes' || answerKickflip === 'y' || answerKickflip === 'ye' || answerKickflip === 'ya'|| answerKickflip === 'yerp') {
+    alert('YES I FLIPPIN` CAN +1xp');
+    yourCurrentXP++;
+    console.log (yourCurrentXP);
+    alert(`You have ${yourCurrentXP}XP.`);
+  }
+  else if (answerKickflip === 'no'|| answerKickflip === 'n' || answerKickflip === 'na' || answerKickflip === 'nope' || answerKickflip === 'noo'|| answerKickflip === 'heck no!') {
+    alert('very INCORRECT, in this is my fav trick ');
+  } else {
+    alert('Please stick to the rules, PAL ');
+  }
 }
-else if (answerKickflip === 'no'|| answerKickflip === 'n' || answerKickflip === 'na' || answerKickflip === 'nope' || answerKickflip === 'noo'|| answerKickflip === 'heck no!') {
-  alert('very INCORRECT, in this is my fav trick ');
-} else {
-  alert('Please stick to the rules, PAL ');
-}
+kickflipAnswer();
 
 //-----Question 3: SHREK-----
 let answerGetShrecked = prompt('Do I think Shrek is rad?').toLowerCase();
