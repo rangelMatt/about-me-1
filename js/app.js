@@ -71,19 +71,22 @@ function getShreckedAnswer(){
 getShreckedAnswer();
 
 //-----Question 4: SEATTLE--------
-let answerSeattle = prompt('Have I been to Seattle?').toLowerCase();
+function seattleAnswer(){
+  let answerSeattle = prompt('Have I been to Seattle?').toLowerCase();
 
-if (answerSeattle === 'yes' || answerSeattle === 'y' || answerSeattle === 'ye' || answerSeattle === 'ya'|| answerSeattle === 'yerp') {
-  alert('Not yet! ');
+  if (answerSeattle === 'yes' || answerSeattle === 'y' || answerSeattle === 'ye' || answerSeattle === 'ya'|| answerSeattle === 'yerp') {
+    alert('Not yet! ');
+  }
+  else if (answerSeattle === 'no'|| answerSeattle === 'n' || answerSeattle === 'na' || answerSeattle === 'nope' || answerSeattle === 'noo'|| answerSeattle === 'heck no!') {
+    alert('CORRECT! Hopefully someday soon though! +1');
+    yourCurrentXP++;
+    console.log (yourCurrentXP);
+    alert(`You have ${yourCurrentXP}XP.`);
+  } else {
+    alert('Please stick to the rules, PAL ');
+  }
 }
-else if (answerSeattle === 'no'|| answerSeattle === 'n' || answerSeattle === 'na' || answerSeattle === 'nope' || answerSeattle === 'noo'|| answerSeattle === 'heck no!') {
-  alert('CORRECT! Hopefully someday soon though! +1');
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
-} else {
-  alert('Please stick to the rules, PAL ');
-}
+seattleAnswer();
 
 //-----Question 5: GOTTFRIED-------
 let answerGottfried = prompt('Have I had drinks with Gilbert Gottfried? (the voice behind Iago from OG Alladin,, and SO much more)').toLowerCase();
