@@ -89,42 +89,50 @@ function seattleAnswer(){
 seattleAnswer();
 
 //-----Question 5: GOTTFRIED-------
-let answerGottfried = prompt('Have I had drinks with Gilbert Gottfried? (the voice behind Iago from OG Alladin,, and SO much more)').toLowerCase();
+function gottfriedAnswer(){
+  let answerGottfried = prompt('Have I had drinks with Gilbert Gottfried? (the voice behind Iago from OG Alladin,, and SO much more)').toLowerCase();
 
-if (answerGottfried === 'yes' || answerGottfried === 'y' || answerGottfried === 'ye' || answerGottfried === 'ya'|| answerGottfried === 'yerp') {
-  alert('NO, I have not yet :/ thanks for believing in me');
+  if (answerGottfried === 'yes' || answerGottfried === 'y' || answerGottfried === 'ye' || answerGottfried === 'ya'|| answerGottfried === 'yerp') {
+    alert('NO, I have not yet :/ thanks for believing in me');
+  }
+  else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried === 'na' || answerGottfried === 'nope' || answerGottfried === 'noo'|| answerGottfried === 'heck no!') {
+    alert('Unfortunately you`re correct :/ +1');
+    yourCurrentXP++;
+    console.log (yourCurrentXP);
+    alert(`You have ${yourCurrentXP}XP.`);
+  } else {
+    alert('Please stick to the rules, PAL ');
+  }
 }
-else if (answerGottfried === 'no'|| answerGottfried === 'n' || answerGottfried === 'na' || answerGottfried === 'nope' || answerGottfried === 'noo'|| answerGottfried === 'heck no!') {
-  alert('Unfortunately you`re correct :/ +1');
-  yourCurrentXP++;
-  console.log (yourCurrentXP);
-  alert(`You have ${yourCurrentXP}XP.`);
-} else {
-  alert('Please stick to the rules, PAL ');
-}
+gottfriedAnswer();
+
 
 
 //----Lab 03 Secret Number Guessing Game-----
-let correctAnswer = 2;
-let guesses = 4;
-
-while(guesses){
-  let answerSix = prompt('Guess the correct number stored in my machine brain');
-
-  if (parseInt(answerSix) === correctAnswer){
-    alert('you are correct');
-    break;
-    //guesses = 0;
-  } else if(answerSix > correctAnswer){
-    alert('Too high');
-    guesses--;
-  }  else (answerSix < correctAnswer);{
-    alert('Too low');
-    guesses--;
-  } if(guesses === 0){
-    alert('Sorry no more guesses');
+function answerSecretNumber(){
+  let correctAnswer = 2;
+  let guesses = 4;
+  
+  while(guesses){
+    let answerSix = prompt('Guess the correct number stored in my machine brain');
+  
+    if (parseInt(answerSix) === correctAnswer){
+      alert('you are correct');
+      break;
+      //guesses = 0;
+    } else if(answerSix > correctAnswer){
+      alert('Too high');
+      guesses--;
+    }  else (answerSix < correctAnswer);{
+      alert('Too low');
+      guesses--;
+    } if(guesses === 0){
+      alert('Sorry no more guesses');
+    }
   }
 }
+answerSecretNumber();
+
 
 
 //----Question 7 on lab!!----
